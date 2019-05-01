@@ -44,22 +44,22 @@
         </rollingPolicy>
     </appender>
 
-    <root level="OFF">
+    <root level="INFO">
         <appender-ref ref="FILE"/>
         <appender-ref ref="STDOUT"/>
     </root>
 
-    <logger name="org.apache.catalina" level="trace">
+    <logger name="org.apache.catalina" level="OFF">
         <appender-ref ref="TOMCAT" />
         <appender-ref ref="STDOUT" />
     </logger>
 
-    <logger name="org.apache.coyote" level="trace">
+    <logger name="org.apache.coyote" level="OFF">
         <appender-ref ref="TOMCAT" />
         <appender-ref ref="STDOUT" />
     </logger>
 
-    <logger name="org.apache.tomcat" level="trace">
+    <logger name="org.apache.tomcat" level="OFF">
         <appender-ref ref="TOMCAT" />
         <appender-ref ref="STDOUT" />
     </logger>
